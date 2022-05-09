@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Roboto-Regular , "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana,
+        sans-serif;
+        overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: unset;
+    }
+
+    &.active {
+        // background-color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+        // border-width: 0;
+        // color: #339EAC;
+    }
+}
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #58B0BE #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #FFC557;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
+
+  @font-face {
+    font-family: Roboto-Regular;
+    src: url("./assets/Fonts/Roboto-Regular.ttf");
+  }

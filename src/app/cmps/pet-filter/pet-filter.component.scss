@@ -1,0 +1,75 @@
+.pet-filter {
+    display: flex;
+    gap: 5px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+
+    .reset {
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 150px;
+        font-size: 16px;
+        color: white;
+        font-weight: 600;
+        margin-left: 20px;
+        background-color: rgb(255, 197, 87);
+        transition: 0.3s;
+
+        &:hover {
+            background-color: #f4b746;
+        }
+    }
+
+    select {
+        border: none;
+        font-size: 16px;
+        color: #828183;
+        box-shadow: 0 2px 8px rgb(20 21 21 / 6%);
+        border-radius: 8px;
+        padding: 0;
+        display: flex;
+        width: 120px;
+        text-align: center;
+        cursor: pointer;
+
+        &:focus {
+            border: none;
+            outline: none;
+        }
+    }
+
+
+    label {
+        font-weight: 600;
+        color: #424244;
+        font-size: 15px;
+    }
+
+    .search {
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 8px;
+        padding: 8px;
+        gap: 8px;
+        box-shadow: 0 2px 8px rgba(20, 21, 21, 0.06);
+        width: 240px;
+
+        img {
+            cursor: default;
+            width: 20px;
+            height: 20px;
+        }
+
+        input {
+            border: none;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+}

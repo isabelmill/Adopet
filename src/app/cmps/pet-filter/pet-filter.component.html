@@ -1,0 +1,37 @@
+<section class="pet-filter">
+
+    <div class="search">
+        <img src="../../../assets/img/search_FILL0_wght400_GRAD0_opsz48 (1).svg" alt="">
+        <input [(ngModel)]="filterBy.term" (ngModelChange)="onChangeFilter()" type="text" name="term" id="term"
+            placeholder="Search Pet By Name">
+    </div>
+
+    <select class="type" [(ngModel)]="filterBy.type" (ngModelChange)="onChangeFilter()">
+        <option value="cat">Cat</option>
+        <option value="dog">Dog</option>
+    </select>
+
+    <select class="gender" [(ngModel)]="filterBy.gender" (ngModelChange)="onChangeFilter()">
+        <option value="">Any Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+    </select>
+
+    <select class="size" [(ngModel)]="filterBy.size" (ngModelChange)="onChangeFilter()">
+        <option value="">Any Size</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+
+    <!-- <select class="age" [(ngModel)]="filterBy.age" (ngModelChange)="onChangeFilter()" placeholder="age">
+        <option value="">Any Age</option>
+        <option *ngIf="filterBy.type === 'dog'" value="puppy">Puppy</option>
+        <option *ngIf="filterBy.type === 'cat'" value="kitten">Kitten</option>
+        <option value="young">Young</option>
+        <option value="adult">Adult</option>
+        <option value="senior">Senior</option>
+    </select> -->
+    <button class="reset" (click)="reset()">Reset All Filters</button>
+
+</section>

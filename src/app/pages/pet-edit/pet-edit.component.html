@@ -1,0 +1,16 @@
+<section class="pet-edit">
+    <h1>{{pet._id?'Edit':'Add'}} Pet</h1>
+    <form (ngSubmit)="onSavePet()">
+        <label for="name">Name</label>
+        <input [(ngModel)]="pet.name" type="text" name="name" id="name">
+
+        <label for="age">Age</label>
+        <input [(ngModel)]="pet.age" type="number" name="age" id="age">
+
+        <label for="birthDate">Birth Date</label>
+        <input [ngModel]="pet.birthDate|date:'yyyy-MM-dd'" (ngModelChange)="handleBirthDateChange($event)" type="date"
+            name="birthDate" id="birthDate">
+
+        <button>Save</button>
+    </form>
+</section>

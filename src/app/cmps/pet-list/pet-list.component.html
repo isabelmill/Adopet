@@ -1,0 +1,7 @@
+<section class="pet-list">
+    <pet-preview (remove)="onRemove.emit($event)" *ngFor="let pet of pets" [pet]="pet"></pet-preview>
+    <div *ngIf="pets.length === 0" class="no-pets">
+        <img src="https://theshelterpetproject.org/wp-content/themes/shelter-pet-project/img/search/notifications/error-timeout-425x425.png" alt="">
+        <p>Try another filter or don't be so picky</p>
+    </div>
+</section>

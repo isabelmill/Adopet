@@ -1,0 +1,60 @@
+<section class="pet-details">
+    <div class="info">
+        <div class="name">
+            <!-- <button (click)="onBack()"><</button> -->
+            <svg (click)="onBack()" class="Hn_ gUZ R19 U9O kVc" height="28" width="28" viewBox="0 0 24 24" aria-hidden="true" aria-label="" role="img"><path d="M8.415 4.586a2 2 0 1 1 2.828 2.828L8.657 10H21a2 2 0 0 1 0 4H8.657l2.586 2.586a2 2 0 1 1-2.828 2.828L1 12l7.415-7.414z"></path></svg>
+            <h1>{{pet.name}}</h1>
+        </div>
+
+        <div class="location">
+            <!-- <img src="../../../assets/img/pin_drop_FILL0_wght400_GRAD0_opsz48.png" alt=""> -->
+            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="map-marker-alt" class="svg-inline--fa fa-map-marker-alt " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="#FFC557" d="M192 96c-52.935 0-96 43.065-96 96s43.065 96 96 96 96-43.065 96-96-43.065-96-96-96zm0 160c-35.29 0-64-28.71-64-64s28.71-64 64-64 64 28.71 64 64-28.71 64-64 64zm0-256C85.961 0 0 85.961 0 192c0 77.413 26.97 99.031 172.268 309.67 9.534 13.772 29.929 13.774 39.465 0C357.03 291.031 384 269.413 384 192 384 85.961 298.039 0 192 0zm0 473.931C52.705 272.488 32 256.494 32 192c0-42.738 16.643-82.917 46.863-113.137S149.262 32 192 32s82.917 16.643 113.137 46.863S352 149.262 352 192c0 64.49-20.692 80.47-160 281.931z"></path></svg>
+            <p>{{pet.location}}</p>
+        </div>
+
+        <div class="pet-info">
+
+            <div class="age pet-info-data">
+                <p>{{pet.age}} years old</p>
+                <label>Age</label>
+            </div>
+
+            <div class="color pet-info-data">
+                <p>{{pet.color}}</p>
+                <label>Color</label>
+            </div>
+
+            <div class="size pet-info-data">
+                <p>{{pet.size}}</p>
+                <label>Size</label>
+            </div>
+
+            <div class="birthdate pet-info-data">
+                <p>{{pet.birthDate|date:'dd/MM/yy'}}</p>
+                <label>Birth Date</label>
+            </div>
+        </div>
+
+        <div class="description">
+            <h1>Pet Story</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur molestiae debitis, voluptatem
+                inventore, cupiditate sint suscipit modi voluptatibus iste ad quae! Consequatur expedita delectus odio,
+                dolore laudantium accusamus sed necessitatibus?</p>
+        </div>
+
+        <div class="actions">
+            <p>Click here to start the adoption process:</p>
+            <button>Adopt {{pet.name}}</button>
+        </div>
+
+        <!-- <section>
+            <button (click)="onBack()">Back</button>
+            <button (click)="onAdoptPet()">Should I Adopt Pet?</button>
+            <span>{{msg}}</span>
+            <span>{{msg$|async}}</span>
+        </section> -->
+    </div>
+    <div class="pet-img">
+        <img [src]="pet.url" alt="">
+    </div>
+</section>

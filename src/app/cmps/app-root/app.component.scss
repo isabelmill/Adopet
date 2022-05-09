@@ -1,0 +1,19 @@
+.main-app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    main {
+        flex-grow: 1;
+    }
+
+    footer {
+        height: 70px;
+        background-color: #FFC557;
+        width: 100vw;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

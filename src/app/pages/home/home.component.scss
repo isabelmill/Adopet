@@ -1,0 +1,78 @@
+.home {
+    display: flex;
+    // flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 140px);
+    // height: 100vh;
+    align-items: center;
+    width: 100%;
+    color: #00121E;
+    padding-left: 100px;
+    overflow: auto;
+    // background-image: url("../../../assets/img/home-dog.png");
+    // background-repeat: no-repeat, repeat;
+    // background-size: cover;
+    // width: 100vw;
+
+
+
+    .home-info {
+        text-align: center;
+        max-height: 100%;
+        h1 {
+            margin: 0;
+            font-size: 55px;
+            margin-bottom: 25px;
+            span{
+                color: #FFC557;
+            }
+        }
+
+        .home-donate{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 25px;
+            justify-content: center;
+            h4{
+                padding: 10px;
+                width: 150px;
+                font-size: 25px;
+                border: 2px solid #FFC557;
+                background-color: #FFC557;
+                color: white;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: 0.3s;
+                
+                &:hover{
+                    background-color: #f4b746;
+                    border-color: #f4b746;
+
+                }
+            }
+        }
+
+        
+        h2 {
+            margin: 0;
+            font-size: 25px;
+        }
+    }
+    
+
+    .home-image {
+        max-width: 1000px;
+        display: flex;
+        object-fit: contain;
+        margin-top: auto;
+        max-height: 100%;
+        position: relative;
+        
+        img {
+            object-fit: contain;
+            width: 100%;
+            bottom: 0;
+        }
+    }
+}

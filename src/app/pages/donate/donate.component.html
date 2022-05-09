@@ -1,0 +1,41 @@
+<section class="donate-main">
+    <img src="../../../assets/img/donate.jpg" alt="">
+    <div class="info">
+        <div class="secure">
+            <a>Make a secure transaction</a>
+            <img src="../../../assets/img/lock.png" alt="">
+        </div>
+        <div class="desc">
+            <h1>Any donation helps!</h1>
+            <p>Our pets need you! Every penny can save their lives and is being transferred to medical care, food and
+                maintaining a proper place for them to live till the day you take them home.</p>
+        </div>
+        <div class="transaction">
+            <h2>Select An Amount</h2>
+            <div class="amounts">
+                <div class="amount" *ngFor="let c of amountList">
+                    <a [ngStyle]=" selectedAmount ===  c.amount?{'background-color': '#FFC557' , 'color': 'white'} : null"
+                        (click)="onSelect(c.amount)" #amountNum>{{c.amount}}</a>
+                </div>
+            </div>
+            <h3>Other Amount</h3>
+            <div class="other">
+                <p>$</p>
+                <input min="0" [(ngModel)]="selectedAmount" type="number">
+            </div>
+        </div>
+        <div class="total">
+            <p>Total: {{selectedAmount}}</p>
+            <a id="myBtn" (click)="donate()">Donate</a>
+        </div>
+    </div>
+
+    <div class="modal" #modal>
+        <div class="modal-content">
+          <h1>Your Donation Has Been Recieved</h1>
+          <p>We thank you for your kind support and your desire to help and make our pets happy.</p>
+          <img src="../../../assets/img/home.jpg" alt="">
+        </div>
+      
+      </div>
+</section>
